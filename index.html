@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: coral;
+            height: 80px;
+            align-items: center;
+            padding: 0px 15px;
+        }
+
+        .banner {
+
+            background-image: url(banner1.jpg.jpg);
+            height: 400px;
+            position: relative;
+            margin-bottom: 30px;
+
+        }
+
+        .headerlink {
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0px;
+            flex-wrap: wrap;
+
+        }
+
+        .imgResDiv {
+            flex: 25%
+        }
+
+        .imgDiv {
+
+            border: 1px dashed black;
+            border-radius: 30px;
+            margin: 20px;
+
+        }
+
+        .imgDiv img {
+            width: 100%;
+            border-radius: 30px 30px 0px 0px;
+        }
+
+        .imgDiv h3 {
+            text-align: center;
+            color: red;
+        }
+
+        .imgDiv p {
+            padding: 0px 20px;
+            text-align: center;
+        }
+
+        .imgDiv .pricePurchaseDiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .imgDiv .price {
+            color: red;
+            font-size: 28px;
+        }
+
+        .imgDiv .purchase {
+            padding: 15px 10px;
+            border-radius: 30px;
+            border: none;
+            background-color: green;
+            color: white;
+            width: 100px;
+
+        }
+
+        .footer {
+            display: flex;
+            background-color: chocolate;
+            height: 100px;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+
+        }
+
+        .footerList {
+
+            list-style-type: none;
+
+        }
+
+        .footerList li {
+            margin-top: 8px;
+        }
+
+        .footerList a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .mobileIcon {
+            display: none;
+        }
+
+        @media screen and (max-width:900px) {
+            .imgResDiv {
+                flex: 100%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+
+
+            .imgDiv {
+                
+                margin-bottom: 30px;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .mobileLinkDisplay {
+                display: none;
+            }
+
+            .mobileLink {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .header {
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+            }
+
+            .mobileIcon {
+                display: block;
+            }
+
+            .headerimg {
+                display: none;
+            }
+
+            .footer {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .footerList {
+                display: flex;
+                padding: 0px;
+            }
+
+            .footerList li {
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="headerDiv" class="header">
+        <div class="mobileIcon">
+            <img src="icon.jpg" width="50px" height="50px">
+
+        </div>
+        <div>
+            <img class="headerimg" src="burgerlogo.png" height="50px" alt="">
+        </div>
+        <div id="navDiv" class="mobileLinkDisplay">
+            <div class="mobileLink">
+                <a class="headerlink" href="">Home</a>
+                <a class="headerlink" href="">About</a>
+                <a class="headerlink" href="">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+
+    </div>
+
+
+    <div class="row">
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+        <div class="imgResDiv">
+            <div class="imgDiv">
+                <img class="img" src="burger.jpg">
+                <h3>KASAP BURGER</h3>
+                <p>Bol Malzemeli Efsane Burger</p>
+                <div class="pricePurchaseDiv">
+                    <p class="price">45.99 <i>TL</i></p>
+                    <button class="purchase">Satın Al</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="footerList">
+            <li> <a href="#">Anasayfa</a></li>
+            <li> <a href="#">Hakkımızda</a></li>
+            <li> <a href="#">İletişim</a></li>
+        </ul>
+
+
+        <img src="burgerlogo.png" height="50px">
+
+        <ul class="footerList">
+            <li> <a href="#">Anasayfa</a></li>
+            <li> <a href="#">Hakkımızda</a></li>
+            <li> <a href="#">İletişim</a></li>
+        </ul>
+
+
+    </div>
+</body>
+
+</html>
